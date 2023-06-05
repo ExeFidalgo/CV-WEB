@@ -78,7 +78,7 @@
       </div>
       <div class="sub-section">
         <h3>Python Programming</h3>
-        <h5>Universidad Nacional de Hurlingham</h5>
+        <h5>Universidad Nacional de Hurlingham</h5>gi
         <p>2023 - Present</p>
       </div>
       <div class="sub-section">
@@ -154,35 +154,51 @@
         <li>Collaborative and committed</li>
       </ul>
     </div>
-    <div>
-      <form id="myForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <br><br>
-        <label for="salary">Sueldo mínimo (ARS):</label>
-        <input type="number" id="salary" name="salary" required>
-        <br><br>
-        <button type="submit">Send</button>
+    <div class="container">
+      <form id="myForm" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea class="form-control" id="message" name="message" required></textarea>
+          <div class="invalid-feedback">Please enter a message.</div>
+        </div>
+        <div class="mb-3">
+          <label for="salary" class="form-label">Sueldo mínimo (ARS):</label>
+          <input type="number" class="form-control" id="salary" name="salary" required>
+          <div class="invalid-feedback">Please enter a minimum salary.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
       </form>
     </div>
-    <div>
-      <h2>Datos ingresados:</h2>
-      <table id="dataTable">
-        <tr>
-          <th>Nombre</th>
-          <th>Email</th>
-          <th>Mensaje</th>
-          <th>Sueldo mínimo (ARS)</th>
-          <th>Sueldo mínimo (USD)</th>
-          <th>Sueldo mínimo (EUR)</th>
-        </tr>
-      </table>
+    
+    <div class="container">
+      <div class="table-responsive">
+        <h2>Datos ingresados:</h2>
+        <table class="table table-striped" id="dataTable">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Mensaje</th>
+              <th>Sueldo mínimo (ARS)</th>
+              <th>Sueldo mínimo (USD)</th>
+              <th>Sueldo mínimo (EUR)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Los datos se agregarán dinámicamente aquí -->
+          </tbody>
+        </table>
+      </div>
     </div>
   </main>
   <footer>
