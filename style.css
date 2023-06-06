@@ -1,115 +1,118 @@
-/* Defino los colores a utilizar */
-:root {
-    --primary-color: #0d6efd; /* Azul */
-    --secondary-color: #212529; /* Negro */
-    --background-color: #f8f9fa; /* Gris claro */
-  }
-  /* La foto */
-  img {
+/* La foto */
+img {
   max-width: 100%;
   height: auto;
 }
-  /* Estilos generales */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: var(--background-color);
-  }
-  
-  /* Estilos de la cabecera */
-  header {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 36px;
-    text-align: center;
-  }
-  
-  /* Estilos de las secciones principales */
-  .section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    font-size: 24px;
-    color: var(--primary-color);
-  }
-  
-  h3 {
-    font-size: 20px;
-    color: var(--secondary-color);
-  }
-  
-  p {
-    margin: 0;
-    font-style: italic;
-  }
-  
-  ul {
-    margin: 10px 0;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
-  /* Estilos específicos de las secciones */
-  .section:nth-child(odd) {
-    background-color: var(--background-color);
-  }
-  
-  .sub-section {
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-left: 5px solid var(--primary-color);
-  }
-  
-  /* Estilos del listado de habilidades */
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 10px 0;
-    padding: 0;
-  }
-  
-  .skills li {
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-  }
-  
-  /* Estilos del listado de habilidades blandas */
-  .soft-skills {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 10px 0;
-    padding: 0;
-  }
-  
-  .soft-skills li {
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    color: var(--primary-color);
-    font-weight: bold;
-  }
-  
-  /* Estilos para el formulario */
+
+/* Defino los colores a utilizar */
+:root {
+  --primary-color: #0d6efd; /* Azul */
+  --secondary-color: #212529; /* Negro */
+  --background-color: #f8f9fa; /* Gris claro */
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+/* Estilos de la cabecera */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Estilos de las secciones principales */
+.section {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+p {
+  margin: 0;
+  font-style: italic;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* Estilos específicos de las secciones */
+.section:nth-child(odd) {
+  background-color: var(--background-color);
+}
+
+.sub-section {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-left: 5px solid var(--primary-color);
+}
+
+/* Estilos del listado de habilidades */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.skills li {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+/* Estilos del listado de habilidades blandas */
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.soft-skills li {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Estilos para el formulario */
 #myForm {
   display: flex;
   flex-direction: column;
@@ -136,8 +139,8 @@ button[type="submit"] {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #2d30cc;
-  color: white;
+  background-color: var(--primary-color);
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -168,4 +171,66 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  background-color: #333333;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url('fidalgo.jpg'); 
+  width: 20px;
+  height: 20px;
+}
+
+/* Estilos de la tabla y la sección */
+.container {
+  margin-top: 20px;
+}
+
+.table-responsive {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  color: #fff;
+}
+
+.table th {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.1);
 }
