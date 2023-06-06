@@ -19,8 +19,8 @@ form.addEventListener('submit', (event) => {
   row.insertCell(2).textContent = message;
   row.insertCell(3).textContent = salary;
 
-  const usdSalary = (parseFloat(salary) / 100).toFixed(2);
-  const eurSalary = (parseFloat(salary) / 110).toFixed(2);
+  const usdSalary = (parseFloat(salary) / 500).toFixed(2);
+  const eurSalary = (parseFloat(salary) / 510).toFixed(2);
   row.insertCell(4).textContent = `$ ${usdSalary} USD`;
   row.insertCell(5).textContent = `€ ${eurSalary} EUR`;
 
