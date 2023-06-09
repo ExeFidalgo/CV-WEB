@@ -1,6 +1,6 @@
 const form = document.getElementById('myForm');
 const dataTable = document.getElementById('dataTable');
-
+const tableBody = dataTable.getElementsByTagName('tbody')[0];
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -20,7 +20,7 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
-  const row = dataTable.insertRow(-1);
+  const row = tableBody.insertRow(-1);
   row.insertCell(0).textContent = name;
   row.insertCell(1).textContent = email;
   row.insertCell(2).textContent = message;
@@ -32,5 +32,27 @@ form.addEventListener('submit', (event) => {
   row.insertCell(5).textContent = `€ ${eurSalary} EUR`;
 
   form.reset();
+
+  // Ordenar la tabla alfabéticamente según el nombre
+  sortTable();
 });
 
+function sortTable() {
+  const rows = Array.from(tableBody.getElementsByTagName('tr'));
+
+  rows.sort((a, b) => {
+    const nameA = a.cells[0].textContent.toLowerCase();
+    const nameB = b.cells[0].textContent.toLowerCase();
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
+
+  for (let i = 0; i < rows.length; i++) {
+    tableBody.appendChild(rows[i]);
+  }
+}
